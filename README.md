@@ -1,11 +1,24 @@
 # DMS Plumbing Website
 [DMS Original web inspo.zip](https://github.com/user-attachments/files/31680123/DMS.Original.web.inspo.zip)
 
+## Student:
+Unathi Chimimba ST10510467
+## Group:
+Group 1
+## Lecture:
+Jessel Soohka
+
 ## Project Overview
 
 This project is a website developed for DMS Plumbing. The purpose of the website is to provide users with clear information about the company, its plumbing services, contact details and enquiry options.
 
 The website was designed using a simple and structured HTML approach. The initial development focuses on the HTML structure and functionality before visual styling and JavaScript are added.
+
+## Goal and Objectives:
+The main goal is to create a modern, trustworthy and mobile friendly website that helps customers find the correct plumbing service and contact DMS Plumbing quickly. Objectives include increasing quote requests, making emergency contact information highly visible, improving local search visibility, and clearly separating residential, commercial and industrial services. The website should also communicate the company’s experience, qualifications and reliability so that first time customers feel confident and comfortable before making contact.
+
+## Key features and Functionality:
+The proposed website should include a clear homepage with 'Get a Quote' and 'Emergency Call' buttons, a searchable services section, individual service pages, service-area pages, an online quote form, click-to-call functionality and a WhatsApp contact option. A testimonials section should display selected reviews, while an FAQ section can answer common plumbing questions. A simple booking/request system could allow users to choose the service needed, location and preferred contact time. 
 
 ## Organisation
 
@@ -61,6 +74,10 @@ The form includes:
 File: contact.html
 
 The Contact page provides DMS Plumbing's contact information, office locations and links to the locations on Google Maps. It also contains a contact form.
+
+## Sitemap
+<img width="589" height="365" alt="Screenshot 2026-09-01 091008" src="https://github.com/user-attachments/assets/126a484d-48a3-44d2-8487-569082cfa497" />
+
 
 ## File and Folder Structure
 
