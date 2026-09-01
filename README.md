@@ -78,3 +78,14 @@ DMS-Plumbing:
 -   js:
         - script.js
 -   images
+
+  ###Refrences 
+
+ChatGPT was used as an AI assistance tool to help generate and structure the HTML code for this project. The code was developed based on the information and inspiration researched from the official DMS Plumbing website, which was provided as a reference source. The generated code was reviewed, adapted and implemented for the requirements of this assignment.
+- DMS Plumbing (n.d.) DMS Plumbing. Available at: https://dmsplumbing.co.za/ (Accessed: 28 August 2026).
+- DMS Plumbing (n.d.) Emergency Plumbers. Available at: https://dmsplumbing.co.za/about-us/ (Accessed: 28 August 2026).
+- DMS Plumbing (n.d.) Plumbing Services. Available at: https://dmsplumbing.co.za/services/ (Accessed: 28 August 2026).
+- DMS Plumbing (n.d.) Contact DMS Plumbing. Available at: https://dmsplumbing.co.za/contact-us/ (Accessed: 28 August 2026).
+- DMS Plumbing (2022) Your Number 2 Is Our Number 1: An Introduction to Johannesburg's Best Plumbing Service, DMS. Available at: https://dmsplumbing.co.za/an-introduction-to-dms-plumbing-why-im-a-plumber/ (Accessed: 28 August 2026).
+
+
