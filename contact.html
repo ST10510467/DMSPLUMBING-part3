@@ -2,205 +2,189 @@
 <html lang="en">
 
 <head>
-    <!-- Defines the character encoding -->
     <meta charset="UTF-8">
-
-    <!-- Makes the webpage responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- The title displayed on the browser tab -->
     <title>DMS Plumbing - Contact</title>
+
+    <link rel="stylesheet" href="Css/style.css">
 </head>
 
 <body>
 
-    <!-- Header containing the company name and navigation -->
     <header>
+        <div class="header-container">
 
-        <h1>DMS Plumbing</h1>
+            <div class="logo">
+                <h1>DMS Plumbing</h1>
+                <p>Professional Plumbing Services</p>
+            </div>
 
-        <!-- Main navigation menu -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
 
+        </div>
     </header>
+
 
     <main>
 
-        <!-- Contact page introduction -->
         <section>
 
             <h2>Contact DMS Plumbing</h2>
 
-            <p>
+            <p class="section-intro">
                 Contact DMS Plumbing for professional plumbing services
                 and emergency plumbing assistance.
             </p>
 
         </section>
 
-        <!-- Main contact information -->
-        <section>
 
-            <h2>Contact Information</h2>
+        <section class="contact">
 
-            <p>
-                <strong>Emergency Telephone:</strong>
-                011 043 5370
-            </p>
+            <div class="contact-container">
 
-            <p>
-                DMS Plumbing is available 24 hours a day,
-                7 days a week for emergency plumbing services.
-            </p>
+                <div class="contact-info">
 
-        </section>
+                    <h3>Contact Information</h3>
 
-        <!-- First office location -->
-        <section>
+                    <p>
+                        <strong>Emergency Telephone:</strong><br>
+                        011 043 5370
+                    </p>
 
-            <h2>Johannesburg Office</h2>
+                    <p>
+                        DMS Plumbing is available 24 hours a day,
+                        7 days a week for emergency plumbing services.
+                    </p>
 
-            <p>
-                DMS Plumbing
-            </p>
 
-            <address>
-                64 Bellairs Drive<br>
-                Glenvista<br>
-                Johannesburg<br>
-                2059
-            </address>
+                    <h3>Johannesburg Office</h3>
 
-            <p>
-                Telephone: 011 043 5370
-            </p>
+                    <address>
+                        DMS Plumbing<br>
+                        64 Bellairs Drive<br>
+                        Glenvista<br>
+                        Johannesburg<br>
+                        2059
+                    </address>
 
-        </section>
+                    <p>
+                        Telephone: 011 043 5370
+                    </p>
 
-        <!-- Second office location -->
-        <section>
 
-            <h2>Sandton Office</h2>
+                    <h3>Sandton Office</h3>
 
-            <p>
-                DMS Plumbing Sandton
-            </p>
+                    <address>
+                        DMS Plumbing Sandton<br>
+                        1 Strouthos Road<br>
+                        Hydepark<br>
+                        Johannesburg<br>
+                        2196
+                    </address>
 
-            <address>
-                1 Strouthos Road<br>
-                Hydepark<br>
-                Johannesburg<br>
-                2196
-            </address>
+                    <p>
+                        Telephone: 060 013 1228
+                    </p>
 
-            <p>
-                Telephone: 060 013 1228
-            </p>
+                </div>
 
-        </section>
 
-        <!-- Map section -->
-        <section>
+                <div class="contact-info">
 
-            <h2>Our Locations</h2>
+                    <h3>Our Locations</h3>
 
-            <p>
-                The map below can be used to view the DMS Plumbing
-                office locations.
-            </p>
+                    <p>
+                        Use the links below to view the DMS Plumbing
+                        office locations.
+                    </p>
 
-            <!-- Map link -->
-            <p>
-                <a
-                    href="https://www.google.com/maps/search/?api=1&query=64+Bellairs+Drive+Glenvista+Johannesburg"
-                    target="_blank"
-                >
-                    View DMS Plumbing Glenvista on Google Maps
-                </a>
-            </p>
+                    <p>
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=64+Bellairs+Drive+Glenvista+Johannesburg"
+                            target="_blank"
+                        >
+                            View Glenvista on Google Maps
+                        </a>
+                    </p>
 
-            <p>
-                <a
-                    href="https://www.google.com/maps/search/?api=1&query=1+Strouthos+Road+Hydepark+Johannesburg"
-                    target="_blank"
-                >
-                    View DMS Plumbing Sandton on Google Maps
-                </a>
-            </p>
+                    <p>
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=1+Strouthos+Road+Hydepark+Johannesburg"
+                            target="_blank"
+                        >
+                            View Sandton on Google Maps
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <!-- Contact form -->
-        <section>
 
-            <h2>Contact Form</h2>
+        <!-- CONTACT FORM -->
+        <section class="form-section">
 
             <form action="#" method="post">
 
-                <p>
-                    <label for="contact-name">
-                        Full Name:
-                    </label><br>
+                <h3>Contact Form</h3>
 
-                    <input
-                        type="text"
-                        id="contact-name"
-                        name="contact-name"
-                        required
-                    >
-                </p>
+                <label for="contact-name">Full Name:</label>
 
-                <p>
-                    <label for="contact-email">
-                        Email Address:
-                    </label><br>
+                <input
+                    type="text"
+                    id="contact-name"
+                    name="contact-name"
+                    placeholder="Enter your full name"
+                    required
+                >
 
-                    <input
-                        type="email"
-                        id="contact-email"
-                        name="contact-email"
-                        required
-                    >
-                </p>
 
-                <p>
-                    <label for="contact-phone">
-                        Phone Number:
-                    </label><br>
+                <label for="contact-email">Email Address:</label>
 
-                    <input
-                        type="tel"
-                        id="contact-phone"
-                        name="contact-phone"
-                        required
-                    >
-                </p>
+                <input
+                    type="email"
+                    id="contact-email"
+                    name="contact-email"
+                    placeholder="Enter your email address"
+                    required
+                >
 
-                <p>
-                    <label for="contact-message">
-                        Message:
-                    </label><br>
 
-                    <textarea
-                        id="contact-message"
-                        name="contact-message"
-                        rows="6"
-                        cols="40"
-                        required
-                    ></textarea>
-                </p>
+                <label for="contact-phone">Phone Number:</label>
 
-                <p>
-                    <button type="submit">
-                        Send Message
-                    </button>
-                </p>
+                <input
+                    type="tel"
+                    id="contact-phone"
+                    name="contact-phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+
+                <label for="contact-message">Message:</label>
+
+                <textarea
+                    id="contact-message"
+                    name="contact-message"
+                    rows="6"
+                    placeholder="Enter your message"
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
 
             </form>
 
@@ -208,13 +192,19 @@
 
     </main>
 
-    <!-- Website footer -->
+
     <footer>
+
+        <h2>DMS Plumbing</h2>
+
+        <p>
+            Professional plumbing services in Johannesburg and
+            surrounding areas.
+        </p>
 
         <p>&copy; 2026 DMS Plumbing. All Rights Reserved.</p>
 
     </footer>
 
 </body>
-
 </html>
