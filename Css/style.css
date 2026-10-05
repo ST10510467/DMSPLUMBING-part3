@@ -19,7 +19,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-
     background-color: #f4f6f5;
     color: #222222;
 }
@@ -30,8 +29,7 @@ body {
 header {
     background-color: #123b2a;
     color: white;
-
-    padding: 20px 5%;
+    padding: 15px 5%;
 }
 
 
@@ -47,13 +45,30 @@ header {
 }
 
 
-.logo h1 {
+/* ================= LOGO ================= */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.logo-image {
+    width: 120px;
+    height: auto;
+
+    border-radius: 5px;
+}
+
+
+.logo-area h1 {
     font-size: 28px;
     margin-bottom: 2px;
 }
 
 
-.logo p {
+.logo-area p {
     font-size: 13px;
 }
 
@@ -69,7 +84,6 @@ nav {
 
 nav a {
     color: white;
-
     text-decoration: none;
 
     padding: 10px 14px;
@@ -82,7 +96,7 @@ nav a {
 }
 
 
-/* Navigation hover */
+/* Pseudo-class for navigation hover */
 
 nav a:hover {
     background-color: #2e8b57;
@@ -100,8 +114,7 @@ nav a.active {
 
 .hero {
     max-width: none;
-
-    min-height: 500px;
+    min-height: 450px;
 
     background-color: #1d513a;
 
@@ -118,23 +131,19 @@ nav a.active {
 
 .hero-content {
     max-width: 800px;
-
     color: white;
 }
 
 
 .hero h2 {
     color: white;
-
     font-size: 48px;
-
     margin-bottom: 20px;
 }
 
 
 .hero p {
     font-size: 20px;
-
     margin-bottom: 30px;
 }
 
@@ -145,7 +154,6 @@ nav a.active {
     display: inline-block;
 
     background-color: #2e8b57;
-
     color: white;
 
     padding: 13px 25px;
@@ -153,7 +161,6 @@ nav a.active {
     border-radius: 5px;
 
     text-decoration: none;
-
     font-weight: bold;
 
     transition: 0.3s;
@@ -172,7 +179,7 @@ nav a.active {
 }
 
 
-/* ================= SECTIONS ================= */
+/* ================= GENERAL SECTIONS ================= */
 
 section {
     max-width: 1200px;
@@ -199,6 +206,44 @@ section p {
 }
 
 
+/* ================= RESPONSIVE IMAGES ================= */
+
+/*
+   This makes all images resize correctly
+   when the screen becomes smaller.
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Main image used on each page */
+
+.page-image-section {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+.page-image {
+    width: 100%;
+    max-width: 1000px;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    margin: auto;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 /* ================= INTRODUCTION ================= */
 
 .introduction {
@@ -219,7 +264,18 @@ section p {
 }
 
 
-/* ================= TWO COLUMN ================= */
+/* ================= SECTION INTRO ================= */
+
+.section-intro {
+    max-width: 800px;
+
+    margin: 0 auto 30px;
+
+    text-align: center;
+}
+
+
+/* ================= TWO COLUMN LAYOUT ================= */
 
 .two-column {
     display: grid;
@@ -247,17 +303,6 @@ section p {
     text-align: left;
 
     font-size: 25px;
-}
-
-
-/* ================= SECTION INTRO ================= */
-
-.section-intro {
-    max-width: 800px;
-
-    margin: 0 auto 30px;
-
-    text-align: center;
 }
 
 
@@ -586,6 +631,8 @@ form select {
 }
 
 
+/* Form pseudo-class */
+
 form input:focus,
 form textarea:focus,
 form select:focus {
@@ -662,19 +709,8 @@ footer p {
 }
 
 
-/* ================= RESPONSIVE IMAGES ================= */
-
-img {
-    max-width: 100%;
-
-    height: auto;
-
-    display: block;
-}
-
-
 /* =====================================================
-   TABLET
+   TABLET RESPONSIVE DESIGN
    ===================================================== */
 
 @media screen and (max-width: 900px) {
@@ -686,6 +722,11 @@ img {
     }
 
 
+    .logo-area {
+        justify-content: center;
+    }
+
+
     nav {
         justify-content: center;
     }
@@ -693,6 +734,11 @@ img {
 
     .hero h2 {
         font-size: 38px;
+    }
+
+
+    .page-image {
+        height: 350px;
     }
 
 
@@ -724,7 +770,7 @@ img {
 
 
 /* =====================================================
-   MOBILE
+   MOBILE RESPONSIVE DESIGN
    ===================================================== */
 
 @media screen and (max-width: 600px) {
@@ -734,7 +780,19 @@ img {
     }
 
 
-    .logo h1 {
+    .logo-area {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .logo-image {
+        width: 100px;
+    }
+
+
+    .logo-area h1 {
         font-size: 24px;
     }
 
@@ -780,8 +838,25 @@ img {
     }
 
 
+    .page-image-section {
+        padding-top: 10px;
+
+        padding-bottom: 20px;
+    }
+
+
+    .page-image {
+        width: 100%;
+
+        height: 250px;
+
+        border-radius: 6px;
+    }
+
+
     .introduction {
         padding-left: 5%;
+
         padding-right: 5%;
     }
 
@@ -804,7 +879,7 @@ img {
 
 
 /* =====================================================
-   SMALL MOBILE
+   SMALL MOBILE RESPONSIVE DESIGN
    ===================================================== */
 
 @media screen and (max-width: 400px) {
@@ -821,6 +896,11 @@ img {
 
     section h2 {
         font-size: 24px;
+    }
+
+
+    .page-image {
+        height: 200px;
     }
 
 
