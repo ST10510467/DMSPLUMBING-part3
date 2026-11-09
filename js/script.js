@@ -223,5 +223,122 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
+
+    // GALLERY LIGHTBOX
+
+    const galleryImages = document.querySelectorAll("img[data-lightbox]");
+
+    if (galleryImages.length > 0) {
+
+        // CREATE THE LIGHTBOX
+
+        const lightbox = document.createElement("div");
+        lightbox.className = "lightbox-overlay";
+        lightbox.setAttribute("role", "dialog");
+        lightbox.setAttribute("aria-modal", "true");
+        lightbox.setAttribute("aria-label", "Enlarged image viewer");
+        lightbox.hidden = true;
+
+        // CREATE THE CLOSE BUTTON
+
+        const closeButton = document.createElement("button");
+        closeButton.className = "lightbox-close";
+        closeButton.type = "button";
+        closeButton.textContent = "×";
+        closeButton.setAttribute("aria-label", "Close image");
+
+        // CREATE THE LARGE IMAGE
+
+        const largeImage = document.createElement("img");
+        largeImage.className = "lightbox-image";
+        largeImage.alt = "";
+
+        lightbox.appendChild(closeButton);
+        lightbox.appendChild(largeImage);
+
+        document.body.appendChild(lightbox);
+
+
+        // OPEN THE LIGHTBOX
+
+        function openLightbox(image) {
+
+            largeImage.src = image.currentSrc || image.src;
+            largeImage.alt = image.alt;
+
+            lightbox.hidden = false;
+            document.body.style.overflow = "hidden";
+
+            closeButton.focus();
+
+        }
+
+
+        // CLOSE THE LIGHTBOX
+
+        function closeLightbox() {
+
+            lightbox.hidden = true;
+            largeImage.src = "";
+            document.body.style.overflow = "";
+
+        }
+
+
+        // MAKE IMAGES CLICKABLE
+
+        galleryImages.forEach(function (image) {
+
+            image.style.cursor = "pointer";
+            image.setAttribute("tabindex", "0");
+            image.setAttribute("role", "button");
+            image.setAttribute("aria-label", "Open enlarged image");
+
+            image.addEventListener("click", function () {
+                openLightbox(image);
+            });
+
+            // ALLOW KEYBOARD USERS TO OPEN IMAGES
+
+            image.addEventListener("keydown", function (event) {
+
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    openLightbox(image);
+                }
+
+            });
+
+        });
+
+
+        // CLOSE BUTTON
+
+        closeButton.addEventListener("click", closeLightbox);
+
+
+        // CLOSE WHEN CLICKING THE DARK BACKGROUND
+
+        lightbox.addEventListener("click", function (event) {
+
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+
+        });
+
+
+        // CLOSE USING THE ESCAPE KEY
+
+        document.addEventListener("keydown", function (event) {
+
+            if (event.key === "Escape" && !lightbox.hidden) {
+                closeLightbox();
+            }
+
+        });
+
+    }
+
 });
 
