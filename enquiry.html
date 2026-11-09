@@ -1,216 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>DMS Plumbing - Enquiry</title>
-
+    <meta name="description" content="Send a plumbing service enquiry to DMS Plumbing in Johannesburg.">
+    <meta name="keywords" content="plumbing enquiry, request plumber, DMS Plumbing">
+    <meta name="author" content="DMS Plumbing">
+    <title>Make an Enquiry | DMS Plumbing</title>
     <link rel="stylesheet" href="Css/style.css">
-
+    <script src="js/script.js" defer></script>
 </head>
-
 <body>
-
-    <!-- HEADER -->
-    <header>
-
-        <div class="header-container">
-
-            <div class="logo-area">
-
-                <img
-                    src="images/logo.jpg.jpg"
-                    alt="DMS Plumbing Logo"
-                    class="logo-image"
-                >
-
-                <div>
-                    <h1>DMS Plumbing</h1>
-                    <p>Professional Plumbing Services</p>
-                </div>
-
-            </div>
-
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="enquiry.html" class="active">Enquiry</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-
+<header>
+    <div class="header-container">
+        <div class="logo-area">
+            <img src="images/logo.jpg.jpg" alt="DMS Plumbing Logo" class="logo-image">
+            <div><h1>DMS Plumbing</h1><p>Professional Plumbing Services</p></div>
         </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="enquiry.html" class="active">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <section>
+        <h2>Make an Enquiry</h2>
+        <p class="section-intro">Complete the form below to enquire about a plumbing service.</p>
+    </section>
 
-    </header>
+    <section class="page-image-section">
+        <img src="images/enquiry-plumbing.jpg.jpg" alt="Customer making a plumbing service enquiry" class="page-image" data-lightbox>
+    </section>
 
+    <section class="form-section">
+        <form class="contact-form" id="enquiry-form">
+            <h3>Plumbing Service Enquiry</h3>
 
-    <main>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" minlength="2" maxlength="80" placeholder="Enter your full name" required>
 
-        <!-- ENQUIRY INTRODUCTION -->
-        <section>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9 +()-]{10,20}" title="Enter a valid phone number" placeholder="Enter your phone number" required>
 
-            <h2>Make an Enquiry</h2>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" maxlength="120" placeholder="Enter your email address" required>
 
-            <p class="section-intro">
-                Complete the form below to enquire about a plumbing
-                service.
-            </p>
+            <label for="service">Service Required:</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Burst Water Pipe Repair">Burst Water Pipe Repair</option>
+                <option value="Geyser Service">Geyser Service</option>
+                <option value="Leak Detection">Leak Detection</option>
+                <option value="Drain Services">Drain Services</option>
+                <option value="Heat Pump">Heat Pump</option>
+                <option value="Gas Geyser">Gas Geyser</option>
+                <option value="General Plumbing Maintenance">General Plumbing Maintenance</option>
+                <option value="Other">Other</option>
+            </select>
 
-        </section>
+            <label for="message">Describe Your Plumbing Problem:</label>
+            <textarea id="message" name="message" rows="6" minlength="10" maxlength="1000" placeholder="Describe your plumbing problem" required></textarea>
 
-
-        <!-- ENQUIRY IMAGE -->
-        <section class="page-image-section">
-
-            <img
-                src="images/enquiry-plumbing.jpg.jpg"
-                alt="Customer making an enquiry about plumbing services"
-                class="page-image"
-            >
-
-        </section>
-
-
-        <!-- ENQUIRY FORM -->
-        <section class="form-section">
-
-            <form action="#" method="post">
-
-                <h3>Plumbing Service Enquiry</h3>
-
-
-                <label for="name">
-                    Full Name:
-                </label>
-
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your full name"
-                    required
-                >
-
-
-                <label for="phone">
-                    Phone Number:
-                </label>
-
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="Enter your phone number"
-                    required
-                >
-
-
-                <label for="email">
-                    Email Address:
-                </label>
-
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email address"
-                    required
-                >
-
-
-                <label for="service">
-                    Service Required:
-                </label>
-
-                <select
-                    id="service"
-                    name="service"
-                    required
-                >
-
-                    <option value="">
-                        Select a service
-                    </option>
-
-                    <option value="burst-pipe">
-                        Burst Water Pipe Repair
-                    </option>
-
-                    <option value="geyser">
-                        Geyser Service
-                    </option>
-
-                    <option value="leak">
-                        Leak Detection
-                    </option>
-
-                    <option value="drain">
-                        Drain Services
-                    </option>
-
-                    <option value="heat-pump">
-                        Heat Pump
-                    </option>
-
-                    <option value="gas-geyser">
-                        Gas Geyser
-                    </option>
-
-                    <option value="maintenance">
-                        General Plumbing Maintenance
-                    </option>
-
-                    <option value="other">
-                        Other
-                    </option>
-
-                </select>
-
-
-                <label for="message">
-                    Describe Your Plumbing Problem:
-                </label>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="6"
-                    placeholder="Describe your plumbing problem"
-                    required
-                ></textarea>
-
-
-                <button type="submit">
-                    Submit Enquiry
-                </button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <h2>DMS Plumbing</h2>
-
-        <p>
-            Professional plumbing services in Johannesburg and
-            surrounding areas.
-        </p>
-
-        <p>
-            &copy; 2026 DMS Plumbing. All Rights Reserved.
-        </p>
-
-    </footer>
-
+            <button type="submit">Submit Enquiry</button>
+            <p class="form-message" id="enquiry-message" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+<footer>
+    <h2>DMS Plumbing</h2>
+    <p>Professional plumbing services in Johannesburg and surrounding areas.</p>
+    <p>&copy; 2026 DMS Plumbing. All Rights Reserved.</p>
+</footer>
 </body>
-
 </html>
